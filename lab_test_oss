@@ -1,0 +1,25 @@
+import numpy as np
+
+def sales(matrix):
+    result = np.sum(x,axis=0)
+    
+    return result;
+    
+print(" Sales Data")
+x = [[120,500,230,75,45],[130,520,210,75,45],[125,530,220,70,50],[140,540,200,90,60]]
+x=np.matrix(x)
+unit=sales(x)
+print("Electronics Groceries Clothing Furniture Stationery")
+print(unit)
+
+Week1 = [120, 500, 230, 75, 45]
+Week2= [130, 520, 210, 80, 40]
+Week3=[125, 530, 220, 70, 50]
+Week4 =[140, 540, 200, 90, 60]
+
+print("total sale for week 1")
+print("total sale for week 2")
+print("total sale for week 3")
+print("total sale for week 4")
+week = np.sum(x,axis=1)
+print(week)
